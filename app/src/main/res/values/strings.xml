@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">F1 Stats</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Statistics application</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_archive">Archive</string>
+    <string name="tab_race_results">Race results</string>
+    <string name="tab_qualifying_results">Qualifying results</string>
+    <string name="tab_post_race_standings">Post race standings</string>
+    <string name="tab_report">Report</string>
+    <string name="tab_drivers">Drivers\' standings</string>
+    <string name="tab_constructors">Constructors\' standings</string>
+    <string name="tab_schedule">Races</string>
+    <string name="home_fetch_limit">3</string>
+    <string name="season_title">Formula One Season</string>
+    <string name="choose_season_hint">Choose season</string>
+    <string name="archive_title">Archive</string>
+    <string name="no_internet_message">Check your internet connection</string>
+</resources>

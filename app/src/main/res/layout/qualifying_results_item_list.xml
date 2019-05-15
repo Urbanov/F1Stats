@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Pos"
+        android:textColor="@color/results"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/driver_name"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/q1"
+        android:layout_toEndOf="@id/position"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Driver"
+        android:textColor="@color/results"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/q2"
+        android:gravity="center"
+        android:text="Q1"
+        android:textColor="@color/results"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/q3"
+        android:gravity="center"
+        android:text="Q2"
+        android:textColor="@color/results"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Q3"
+        android:textColor="@color/results"
+        android:textSize="12sp" />
+
+</RelativeLayout>

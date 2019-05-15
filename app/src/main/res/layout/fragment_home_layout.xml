@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/last_race_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/secondPlace"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Last race"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <fragment
+                    android:id="@+id/last_race"
+                    android:name="edu.pw.f1stats.fragment.RacesFragment_"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <fragment
+                    android:id="@+id/last_race_results"
+                    android:name="edu.pw.f1stats.fragment.RaceResultsFragment_"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:id="@+id/next_race_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/secondPlace"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Next race"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/empty_next_race"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:text="No data available"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <edu.pw.f1stats.item.RacesItemView_
+                        android:id="@+id/next_race"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/drivers_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/secondPlace"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Drivers' standings"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <fragment
+                    android:id="@+id/drivers"
+                    android:name="edu.pw.f1stats.fragment.DriversStandingsFragment_"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:tag="test" />
+
+                <TextView
+                    android:id="@+id/constructors_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/secondPlace"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Constructors' standings"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <fragment
+                    android:id="@+id/constructors"
+                    android:name="edu.pw.f1stats.fragment.ConstructorsStandingsFragment_"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

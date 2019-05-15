@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#FFFFFF</color>
+    <color name="colorPrimary">#8B8B8B</color>
+    <color name="colorPrimaryDark">#3F3F3F</color>
+    <color name="colorTabs">#515B68</color>
+    <color name="colorAccent">#A00000</color>
+
+    <color name="firstPlace">#FFFFBF</color>
+    <color name="secondPlace">#DFDFDF</color>
+    <color name="thirdPlace">#FFDF9F</color>
+    <color name="otherPlace">#00FFFFFF</color>
+
+    <color name="oddColor">#F8F8F8</color>
+    <color name="evenColor">#E6E6E6</color>
+
+    <color name="results">#111111</color>
+</resources>
